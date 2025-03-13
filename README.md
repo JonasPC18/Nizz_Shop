@@ -13,7 +13,7 @@ Menu de navegação com links para as seções do site: Home, Produtos, Serviço
 
 3. Seção de Produtos
 A seção de produtos apresenta os itens disponíveis para compra,com imagens, descrição e preço por quilograma. 
-Eles estãod ivididos em categorias: Frutas e Verduras; Alimentos Não Perecíveis; e higiene e limpeza.
+Eles estão divididos em categorias: Frutas e Verduras; Alimentos Não Perecíveis; e higiene e limpeza.
 
 4. Seção de Serviços
 O MiniMercado Vizz oferece dois serviços principais: Retirada no Local e Tele-Entrega.
