@@ -1,0 +1,132 @@
+/* Importar Bootstrap (se ainda for desejado usar) */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+/* ====================================== */
+/* 1) Definições de cores e fontes        */
+/* ====================================== */
+:root {
+  /* Você pode retirar ou alterar estas variáveis, se quiser.
+     Aqui deixei somente como exemplo para manter consistência. */
+  --bs-primary: #f5f5dc; /* Define "var(--bs-primary)" como bege */
+  --bs-secondary: #555555;
+  --bs-body-font-family: "Arial", sans-serif;
+}
+
+/* ====================================== */
+/* 2) Estilos globais                     */
+/* ====================================== */
+body {
+  /* Fundo bege e texto preto */
+  background-color: #f5f5dc;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====================================== */
+/* 4) Ajuste dos menus de navegação       */
+/*    (links na horizontal, texto preto)  */
+/* ====================================== */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centraliza o container */
+}
+
+nav ul li {
+  display: inline-block; /* Cada li em bloco inline */
+  margin: 0 10px; /* Espaçamento lateral */
+}
+
+nav ul li a {
+  color: #000; /* Links em preto */
+  text-decoration: none; /* Sem sublinhado */
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  /* Ao passar o mouse, apenas um fundo mais claro */
+  background-color: #ddd;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* ====================================== */
+/* 7) Formulários                         */
+/* ====================================== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff; /* Se desejar manter o fundo branco no formulário */
+  padding: 20px;
+  border-radius: 4px;
+  color: #000; /* Texto em preto */
+}
+
+form label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: inline-block;
+  color: #000; /* Texto em preto */
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 15px;
+}
+
+/* Botão de envio do formulário */
+form button {
+  text-transform: uppercase;
+  border-radius: 0;
+  /* Caso use as classes Bootstrap:
+     @extend .btn; 
+     @extend .btn-primary; 
+     ... senão, personalize direto: */
+}
+
+/* 3) Separar o menu principal do logo (header) */
+header nav {
+  margin-top: 20px; /* Espaço entre o logo e o menu principal */
+}
+
+/* 5) Separar o "Produtos" do conteúdo abaixo (já tem <hr>, mas podemos reforçar) */
+h2 ~ section {
+  margin-top: 40px; /* Espaço maior antes de cada seção de produtos */
+}
+
+/* Centraliza todo o conteúdo em todas as páginas */
+body,
+header,
+nav,
+main,
+section,
+article,
+footer {
+  text-align: center; /* Centraliza textos, títulos e elementos de bloco */
+}
+
+/* Deixa o formulário alinhado à esquerda, mas centralizado na página */
+form {
+  max-width: 600px;
+  margin: 0 auto; /* Centraliza o bloco do form em relação à página */
+  text-align: left; /* Alinha internamente o conteúdo à esquerda */
+}
+
+.img-produto {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.lista-produtos {
+  display: flex; /* Disposição em linha */
+  flex-wrap: wrap; /* Se a tela for estreita, os itens quebram de linha */
+  justify-content: center; /* Centraliza os itens no contêiner */
+  gap: 20px; /* Espaçamento horizontal/vertical entre os cards */
+  margin: 20px auto; /* Se quiser espaçar do resto e centralizar */
+  max-width: 1200px; /* Tamanho máximo (opcional) */
+}
