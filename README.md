@@ -1,14 +1,14 @@
-# MiniMercado_Vizz
+# Nizz_Shop
 Projeto de MiniMercado para disciplina de Sistemas Web PUCRS
 Este documento contém informações sobre as funcionalidades da nossa página web.
 
 1. Home
 É a página inicial.
-Mostra o Logo do MiniMercado Vizz e um menu de navegação do site, além do rodapé. 
+Mostra o Logo do MiniMercado Nizz e um menu de navegação do site, além do rodapé. 
 
 2. Cabeçalho 
 O cabeçalho da página contém:
-Logo do MiniMercado Vizz para identificação visual.
+Logo do MiniMercado Nizz para identificação visual.
 Menu de navegação com links para as seções do site: Home, Produtos, Serviços, Endereços e Cadastro.
 
 3. Seção de Produtos
