@@ -141,10 +141,9 @@ footer a {
 
 /*CÍRCULOS NO CANTO SUPERIOR ESQUERDO */
 .decor-circulos{
-  position:fixed;
+  position: absolute;
   top:0;
   left:0;
-  width:460px;
   height:auto;
   pointer-events:none;
   z-index:-1;
@@ -173,3 +172,26 @@ footer a {
 .btn-login {
   border-radius: 0 !important;
 }
+
+
+.flex-container1{
+  display:flex;
+  background-color:#f9f9f9;
+  justify-content:center;
+  margin-top:50px;
+  margin-bottom:25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.flex-container2{
+  display:flex;
+  justify-content:center;
+  margin-top:25px;
+  margin-bottom:50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
