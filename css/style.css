@@ -2,12 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 /* Body */
 body {
   color: #000;
-  margin: 0;
-  padding: 0;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/*main */
+main {
+  flex: 1 0 auto;  
 }
 
 
@@ -16,8 +28,6 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
-  
 }
 
 nav ul li {
@@ -50,6 +60,7 @@ form {
   padding: 20px;
   border-radius: 4px;
   color: #000;
+  text-align: left;
 }
 
 form label {
@@ -63,7 +74,7 @@ form input,
 form select,
 form textarea {
   border-radius: 0.5rem;
-  border: 1px solid #ccc; /* <-- adicionado */
+  border: 1px solid #ccc;
   padding: 8px;
 }
 
@@ -93,13 +104,6 @@ footer {
   text-align: center;
 }
 
-/*  formulário alinhado à esquerda, mas centralizado na página */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
 /* aqui lida com as imagens dos produtos */
 .img-produto {
   width: 100%;
@@ -108,20 +112,32 @@ form {
   object-position: center center;
 }
 
-.welcome h1 {
-  color: #EB9D07;
-  font-weight:900;
-}
-
-
+/* footer */
 footer {
   background-color: #f9f9f9;
-  padding: 40px 20px;
-  border-top: 1px solid #ddd;
-  font-size: 14px;
-  color: #333;
-   border-radius: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+
+  /* --- novo --- */
+  margin-top: 32px;   /* ajuste a altura como quiser */
 }
+
+footer p {
+  margin: 6px 0;
+}
+
+footer a {
+  color: #388561;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
 
 /*CÍRCULOS NO CANTO SUPERIOR ESQUERDO */
 .decor-circulos{
@@ -143,4 +159,17 @@ footer {
   .decor-circulos{
     opacity:0;
   }
+}
+
+
+/*extras*/
+.welcome h1 {
+  color: #EB9D07;
+  font-weight:900;
+  margin-top: 70px;
+  font-size: xx-large;
+}
+
+.btn-login {
+  border-radius: 0 !important;
 }
